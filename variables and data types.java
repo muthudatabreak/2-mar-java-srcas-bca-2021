@@ -1,3 +1,4 @@
+// https://www.w3schools.com/java/tryjava.asp?filename=demo_interface_multi
 import java.io.*;
 class program1
 {
