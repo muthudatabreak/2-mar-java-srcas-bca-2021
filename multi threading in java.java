@@ -1,18 +1,12 @@
-package demotest;
- 
-public class GuruThread1 implements Runnable
-{
-       public static void main(String[] args) {
-        Thread gThread1 = new Thread("abi1");
-        Thread g1Thread2 = new Thread("shek2");
-        gThread1.start();
-        g1Thread2.start();
-        System.out.println("Thread names are following:");
-        System.out.println(gThread1.getName());
-        System.out.println(g1Thread2.getName());
-    }
-    @Override
-    public void run() {
-    }
- 
+// https://www.w3schools.com/java/tryjava.asp?filename=demo_interface_multi
+public class Main implements Runnable {
+  public static void main(String[] args) {
+    Main obj = new Main();
+    Thread thread = new Thread(obj);
+    thread.start();
+    System.out.println("This is abishek inside program");
+  }
+  public void run() {
+    System.out.println("This code is abishek outside program");
+  }
 }
